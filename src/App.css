@@ -1,0 +1,144 @@
+#root{
+  position: relative;
+  height: 100%;
+  margin: auto;
+  background: rgb(8,36,79);
+  background: linear-gradient(150deg, rgba(8,36,79,1) 0%, rgba(19,76,181,1) 45%, rgba(11,66,171,1) 100%);
+}
+
+/* HEADER */
+.header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  padding: 25px;
+}
+
+.header-search{
+  display: flex;
+  place-items: center;
+}
+
+.header button{
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border-style: none;
+}
+
+.header input[type="text"]{
+  position: relative;
+  width: 150px;
+  font-size: 18px;
+  padding: 5px;
+  background-color: transparent;
+  color: var(--color-font-white);
+  font-weight: 600;
+  border-style: none;
+  outline: none;
+  border-bottom: 2px solid var(--color-font-white);
+  margin-left: 12px;
+}
+
+#text-ingresar{
+  color: var(--color-font-white);
+  text-align: center;
+  margin-top: 120px;
+  font-size: 32px;
+}
+
+/* COUNTRY */
+
+#iconWeather{
+  width: 120px;
+}
+
+.country{
+  position: relative;
+  color: var(--color-font-white);
+  text-align: center;
+}
+
+.country h1{
+  font-size: 64px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.country h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* STATISTICS */
+.statistics{
+  width: 343px;
+  height: 47px;
+  margin: auto;
+  margin-top: 31px;
+  background-color: var(--background-blue-secondary);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.statistics ul{
+  color: var(--color-font-white);
+  display: flex;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.statistics ul svg{
+  margin-right: 5px;
+}
+
+/* FORECAST CONTAINER */
+.container-forecast{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* FORECAST */
+.forecast-today, .forecast-next-day{
+  width: 343px;
+  height: 217px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: var(--background-blue-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--color-font-white);
+}
+
+/* TODAY */
+
+.today-header, .next-day-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-today img{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* NEXT DAY */
+.forecast-next-day{
+  flex-direction: column;
+}
+
+.item-next-day{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}

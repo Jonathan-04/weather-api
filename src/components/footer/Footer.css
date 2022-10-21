@@ -1,0 +1,42 @@
+footer{
+    position: relative;
+    width: 100%;
+    margin-top: 200px;
+    color: var(--color-white);
+    background-color: var(--color-gray-900);
+}
+
+.redes{
+    padding: 15px;
+}
+
+.redes li{
+    margin: 15px;
+}
+
+.sub-redes{
+    display: flex;
+}
+
+.sub-redes li{
+    margin: 10px;
+}
+
+#oracle-one{
+    width: 70px;
+}
+
+.important{
+    width: 100%;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.important a{
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
