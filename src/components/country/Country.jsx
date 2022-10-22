@@ -1,7 +1,10 @@
 import { useState } from "react";
-import DataCountry from "../dataCountry/DataCountry";
+
 import { IcTwotoneSearch as Search } from "../icons/Search";
+import DataCountry from "../dataCountry/DataCountry";
 import Bell from "../icons/Bell";
+import Forecast from "../Forecast/Forecast";
+import DataForecast from "../dataCountry/DataForecast";
 
 export default function Country() {
   const [dataCity, setDataCity] = useState();
@@ -26,18 +29,21 @@ export default function Country() {
 
   if (!dataCity)
     return (
-      <form onSubmit={fetchData}>
-        <header className="header">
-          <div className="header-search">
-            <button>
-              <Search />
-            </button>
-            <input type="text" id="inputCity" placeholder="Ciudad" required />
-          </div>
-          <Bell />
-        </header>
-        <h1 id="text-ingresar">Ingresa el Nombre de la Ciudad</h1>
-      </form>
+      <>
+        <form onSubmit={fetchData}>
+          <header className="header">
+            <div className="header-search">
+              <button>
+                <Search />
+              </button>
+              <input type="text" id="inputCity" placeholder="Ciudad" required />
+            </div>
+            <Bell />
+          </header>
+          <h1 id="text-ingresar">Ingresa el Nombre de la Ciudad</h1>
+        </form>
+        <DataForecast />
+      </>
     );
   return (
     <>
@@ -53,6 +59,8 @@ export default function Country() {
         </header>
       </form>
       <DataCountry dataCity={dataCity} />
+
+      <Forecast forecastCity={dataCity.name} />
     </>
   );
 }

@@ -12,12 +12,13 @@ export default function DataCountry({ dataCity }) {
       <section className="country">
         <img id="iconWeather" src={iconWeather} alt="Sun" />
         <p>{dataCity.weather[0].description}</p>
-        <h1>{dataCity["main"].temp} °C</h1>
+        <h1>{Math.round(dataCity["main"].temp)} °C</h1>
         <h2>
           {dataCity.name} - {dataCity["sys"].country}
         </h2>
         <p>
-          Max.: {dataCity["main"].temp_max}° Min.: {dataCity["main"].temp_min}°
+          Max.: {Math.round(dataCity["main"].temp_max)}° Min.:{" "}
+          {Math.round(dataCity["main"].temp_min)}°
         </p>
       </section>
       <section className="statistics">
