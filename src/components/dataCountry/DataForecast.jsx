@@ -23,7 +23,7 @@ export default function DataForecast({ dataForecast }) {
       <div className="container-forecast">
         <section className="forecast-today">
           <div className="today-header">
-            <h3>Today</h3>
+            <h3>A 3 Horas</h3>
           </div>
           {dataForecast.list.slice(0, 4).map((forecast, idx) => (
             <article className="item-today" key={idx}>
@@ -39,7 +39,7 @@ export default function DataForecast({ dataForecast }) {
         </section>
         <section className="forecast-next-day">
           <div className="next-day-header">
-            <h3>Next Forecast</h3>
+            <h3>Próximo Pronóstico</h3>
             <Calendar />
           </div>
           {dataForecast.list.splice(0, 2).map((forecast, idx) => (
