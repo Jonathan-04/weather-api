@@ -47,7 +47,7 @@ function Footer() {
         </p>
 
         <p>
-          Créditos al diseño por:
+          Diseño inspirado en:
           <a
             href="https://www.figma.com/community/file/1158928016905524023"
             target="_blank"
